@@ -107,12 +107,12 @@ aside {
     @include new-spirit-font;
     @include transition-all;
     .navbar-header .navbar-brand {
-        color: $theme-primary;
+        color: $theme-dark;
         @include new-spirit-font;
         font-weight: 600;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: darken($theme-green, 10%);
         }
     }
     .nav {
