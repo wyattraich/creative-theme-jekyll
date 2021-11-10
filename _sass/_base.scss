@@ -435,7 +435,7 @@ body {
 
 //Testimonails
 #quote-carousel {
-    padding: 0 10px 30px 10px;
+    padding: 0 30px 30px 30px;
     margin-top: 60px;
 }
 #quote-carousel .carousel-control {
@@ -476,18 +476,21 @@ body {
     margin: 0;
 }
 
-.google-maps {
-    position: relative;
-    padding-bottom: 75%; // This is the aspect ratio
-    height: 0;
-    overflow: hidden;
+
+//map responsive css
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
-.google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 /*@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
