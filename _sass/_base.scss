@@ -18,6 +18,10 @@ hr.light {
     border-color: white;
 }
 
+hr.dark {
+    border-color: $theme-dark;
+}
+
 a {
     @include transition-all;
     color: $theme-primary;
@@ -33,7 +37,8 @@ h3,
 h4,
 h5,
 h6 {
-    @include sans-serif-font;
+    @include new-spirit-font;
+    
 }
 
 p {
@@ -42,8 +47,30 @@ p {
     margin-bottom: 20px;
 }
 
+.p1 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
 .bg-primary {
-    background-color: $theme-primary;
+    //background-color: $theme-primary;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    @include background-cover;
+    background-position: center;
+    background-image: url('../img/background.png');
+}
+
+.bg-location{
+    //background-color: $theme-primary;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    @include background-cover;
+    background-position: center;
+    background-image: url('../img/background2.png');
 }
 
 .bg-dark {
@@ -53,6 +80,11 @@ p {
 
 .text-faded {
     color: rgba(white, .7);
+}
+
+.text-domes{
+    color: $theme-dark;
+    font-size: 14px;
 }
 
 section {
@@ -72,13 +104,12 @@ aside {
 .navbar-default {
     background-color: white;
     border-color: rgba($theme-dark, .5);
-    @include sans-serif-font;
+    @include new-spirit-font;
     @include transition-all;
     .navbar-header .navbar-brand {
         color: $theme-primary;
-        @include sans-serif-font;
-        font-weight: 700;
-        text-transform: uppercase;
+        @include new-spirit-font;
+        font-weight: 600;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -90,16 +121,16 @@ aside {
             > a:focus {
                 text-transform: uppercase;
                 font-weight: 700;
-                font-size: 13px;
+                font-size: 14px;
                 color: $theme-dark;
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-green;
                 }
             }
             &.active {
                 > a,
                 > a:focus {
-                    color: $theme-primary !important;
+                    color: $theme-green !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -110,37 +141,37 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: rgba($theme-dark, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba($theme-dark, .7);
             &:hover,
             &:focus {
-                color: white;
+                color: $theme-dark;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba($theme-dark, .7);
             &:hover {
-                color: white;
+                color: $theme-dark;
             }
         }
         &.affix {
             background-color: white;
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
-                color: $theme-primary;
-                font-size: 14px;
+                color: $theme-green;
+                font-size: 18px;
                 &:hover,
                 &:focus {
-                    color: darken($theme-primary, 10%);
+                    color: darken($theme-green, 10%);
                 }
             }
             .nav > li > a,
             .nav > li > a:focus {
                 color: $theme-dark;
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-green;
                 }
             }
         }
@@ -155,7 +186,8 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('');
+    transition: background 1s linear;
     text-align: center;
     color: white;
     .header-content {
@@ -205,10 +237,13 @@ header {
     }
 }
 
+
 // Sections
 
 .section-heading {
     margin-top: 0;
+    padding-top: 30px;
+    color: $theme-orange;
 }
 
 .service-box {
@@ -300,11 +335,11 @@ header {
 }
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant(white, $theme-orange, $theme-orange);
 }
 
 .btn {
-    @include sans-serif-font;
+    @include new-spirit-font;
     border: none;
     border-radius: 300px;
     font-weight: 700;
@@ -349,3 +384,207 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+
+//Image gallery
+.gallery {
+    margin: 10px 40px;
+}
+  
+.gallery img {
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+    padding: 5px;
+}
+  
+.gallery img:hover {
+    filter: drop-shadow(4px 4px 6px gray);
+    transform: scale(1.1);
+}
+
+
+//image columns
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+//Testimonails
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: $theme-orange;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .6s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.map {
+    filter: grayscale(100%);         
+}
+
+/*@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+bodyt {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcc99;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.testimonials {
+  background: $theme-primary;
+  text-align: center;
+  width: 95%;
+  max-width: 2000px;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+.title-testimonials {
+  font-size: 1.5rem;
+}
+.description-testimonials {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.slider-container {
+  margin-top: 2rem;
+  margin: 2rem auto 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  flex: 0 0 1;
+  width: 100%; //Depends On slide-box Length * 100 
+  transition: all 0.5s linear;
+}
+.slide-box {
+  padding: 0 80px;
+}
+.slide-box .comment {
+  background-color: #fff;
+  color: $theme-green;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  font-weight: 400;
+}
+.slide-box .comment::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  height: 20px;
+  width: 20px;
+  background-color: $theme-green;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.slide-box img {
+  max-width: 60px;
+  border-radius: 50%;
+}
+.slide-box .name {
+  font-size: 1rem;
+}
+.slide-box .job {
+  font-size: 0.7rem;
+  color: #8d8e97;
+  font-weight: 400;
+}
+
+.control-slider {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  line-height: 40px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+.btn-left {
+  left: 10px;
+}
+.btn-right {
+  right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .slide-box {
+    padding: 0 55px;
+  }
+}*/
+  

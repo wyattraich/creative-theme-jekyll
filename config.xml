@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	showThumbsButton="true"
+	showOpenButton="true"
+	indexPageName="indexGalleryJuiceBox.html"
+	backgroundColor="rgba(34,34,34,0)"
+	textColor="rgba(255,255,255,0)"
+	galleryHeight="70%"
+
+>
+  <image imageURL="images/outside.jpg"
+	thumbURL="thumbs/outside.jpg"
+	linkURL="images/outside.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/wyattraich/Desktop/Pitch/PitchWebsite/creative-theme-jekyll/img/outside.JPG">
+    <title><![CDATA[outside]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/inside_panorama.jpg"
+	thumbURL="thumbs/inside_panorama.jpg"
+	linkURL="images/inside_panorama.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/wyattraich/Desktop/Pitch/PitchWebsite/creative-theme-jekyll/img/inside_panorama.JPG">
+    <title><![CDATA[inside_panorama]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/full_kitchen.jpg"
+	thumbURL="thumbs/full_kitchen.jpg"
+	linkURL="images/full_kitchen.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/wyattraich/Desktop/Pitch/PitchWebsite/creative-theme-jekyll/img/full_kitchen.JPG">
+    <title><![CDATA[full_kitchen]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/view.jpg"
+	thumbURL="thumbs/view.jpg"
+	linkURL="images/view.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/wyattraich/Desktop/Pitch/PitchWebsite/creative-theme-jekyll/img/view.JPG">
+    <title><![CDATA[view]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/bath_kitchen.jpg"
+	thumbURL="thumbs/bath_kitchen.jpg"
+	linkURL="images/bath_kitchen.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/wyattraich/Desktop/Pitch/PitchWebsite/creative-theme-jekyll/img/bath_kitchen.JPG">
+    <title><![CDATA[bath_kitchen]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/insie_panorama_lights.jpg"
+	thumbURL="thumbs/insie_panorama_lights.jpg"
+	linkURL="images/insie_panorama_lights.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/wyattraich/Desktop/Pitch/PitchWebsite/creative-theme-jekyll/img/insie_panorama_lights.JPG">
+    <title><![CDATA[insie_panorama_lights]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/bath1.jpg"
+	thumbURL="thumbs/bath1.jpg"
+	linkURL="images/bath1.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/wyattraich/Desktop/Pitch/PitchWebsite/creative-theme-jekyll/img/bath1.JPG">
+    <title><![CDATA[bath1]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/bath2.jpg"
+	thumbURL="thumbs/bath2.jpg"
+	linkURL="images/bath2.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/wyattraich/Desktop/Pitch/PitchWebsite/creative-theme-jekyll/img/bath2.JPG">
+    <title><![CDATA[bath2]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/welcome.jpg"
+	thumbURL="thumbs/welcome.jpg"
+	linkURL="images/welcome.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/wyattraich/Desktop/Pitch/PitchWebsite/creative-theme-jekyll/img/welcome.JPG">
+    <title><![CDATA[welcome]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>
