@@ -22,6 +22,15 @@ hr.dark {
     border-color: $theme-dark;
 }
 
+hr.orange {
+    border-color: $theme-orange;
+}
+
+hr.greem {
+    border-color: $theme-green;
+}
+
+
 a {
     @include transition-all;
     color: $theme-primary;
@@ -73,6 +82,13 @@ p {
     background-image: url('../img/background2.png');
 }
 
+.bg-primaryColor {
+    background-color: $theme-primary;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+}
+
 .bg-dark {
     background-color: $theme-dark;
     color: white;
@@ -85,6 +101,11 @@ p {
 .text-domes{
     color: $theme-dark;
     font-size: 14px;
+}
+
+.text-activities{
+    color: $theme-orange;
+    font-size: 18px;
 }
 
 section {
@@ -243,7 +264,7 @@ header {
 .section-heading {
     margin-top: 0;
     padding-top: 20px;
-    color: $theme-orange;
+    color: $theme-green;
 }
 
 .service-box {
@@ -283,6 +304,7 @@ header {
             .project-name {
                 @include sans-serif-font;
                 padding: 0 15px;
+                color: $theme-dark;
             }
             .project-category {
                 text-transform: uppercase;
@@ -290,7 +312,7 @@ header {
                 font-size: 14px;
             }
             .project-name {
-                font-size: 18px;
+                font-size: 20px;
             }
         }
     }
