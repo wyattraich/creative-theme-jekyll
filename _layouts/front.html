@@ -15,22 +15,22 @@
   {% include about.html %}
   {% include contact.html %}
   {% include scripts.html %}
-
-  <script>
-    //Array of images which you want to show: Use path you want.
-    var images=new Array('img/outside.JPG','img/inside_panorama.JPG','img/doubleAA.jpeg');
-    var nextimage=0;
-    doSlideshow();
-    
-    function doSlideshow(){
-        if(nextimage>=images.length){nextimage=0;}
-        $('.header')
-        .css('background-image','url("'+images[nextimage++]+'")')
-        .fadeIn(4000,function(){
-            setTimeout(doSlideshow,4000);
-        });
-    }
-  </script>
 </body>
 
 </html>
+
+<script>
+  //Array of images which you want to show: Use path you want.
+  var images=new Array('img/outside.JPG','img/inside_panorama.JPG','img/doubleAA.jpeg');
+  var nextimage=0;
+  doSlideshow();
+  
+  function doSlideshow(){
+      if(nextimage>=images.length){nextimage=0;}
+      $('.header')
+      .css('background-image','url("'+images[nextimage++]+'")')
+      .fadeIn(4000,function(){
+          setTimeout(doSlideshow,4000);
+      });
+  }
+</script>
