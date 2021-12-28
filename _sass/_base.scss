@@ -69,7 +69,7 @@ p {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/background.png');
+    background-image: url('../img/background.webp');
 }
 
 .bg-location{
@@ -79,7 +79,7 @@ p {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/background2.png');
+    background-image: url('../img/background2.webp');
 }
 
 .bg-primaryColor {
